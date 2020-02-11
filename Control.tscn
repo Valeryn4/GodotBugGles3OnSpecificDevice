@@ -1,0 +1,56 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://4096.png" type="Texture" id=1]
+[ext_resource path="res://2048.png" type="Texture" id=2]
+[ext_resource path="res://1024.png" type="Texture" id=3]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="1024x1024" type="Label" parent="."]
+margin_left = 80.0
+margin_top = 72.0
+margin_right = 151.0
+margin_bottom = 86.0
+text = "1024x1024"
+
+[node name="1024" type="Sprite" parent="1024x1024"]
+position = Vector2( 30.6177, 111.132 )
+scale = Vector2( 0.145336, 0.145336 )
+texture = ExtResource( 3 )
+
+[node name="2048x2048" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -35.5
+margin_top = 80.0
+margin_right = 35.5
+margin_bottom = 111.0
+text = "2048x2048
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="2048" type="Sprite" parent="2048x2048"]
+position = Vector2( 42.6118, 157.087 )
+scale = Vector2( 0.129215, 0.129215 )
+texture = ExtResource( 2 )
+
+[node name="4096x4096" type="Label" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -151.0
+margin_top = 80.0
+margin_right = -80.0
+margin_bottom = 111.0
+text = "4096x4096"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="4096" type="Sprite" parent="4096x4096"]
+position = Vector2( 33.2852, 243.734 )
+scale = Vector2( 0.10414, 0.10414 )
+texture = ExtResource( 1 )
